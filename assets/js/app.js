@@ -1,12 +1,8 @@
 'use strict';
-
-
-
 const test = document.querySelector('.js__test');
 const counter = document.querySelector('.js__counter');
 const reloadInMS = 300000;
 let rDays = getDays();
-let t = 0;
 
 function getDays() {
   const now = new Date();
@@ -30,7 +26,4 @@ writeRemainingDays(rDays);
 const checkDays = setInterval(function(){
   rDays = getDays();
   writeRemainingDays(rDays);
-  t++;
-  test.innerHTML = t;
-
 }, reloadInMS);
