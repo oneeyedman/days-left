@@ -7,7 +7,6 @@ const endDate = moment([2019, 10, 2]);
 
 const counter = document.querySelector('.js__counter');
 const rDays = endDate.diff(startDate, 'days');
-console.log(rDays);
 
 function writeRemainingDays(days) {
   let result = '0';
