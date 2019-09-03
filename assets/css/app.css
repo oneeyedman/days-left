@@ -3,7 +3,7 @@ html {
 }
 .app {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   color: white;
+  font-weight: bold;
 }
 @media all and (min-width: 768px) {
   .app__counter {
