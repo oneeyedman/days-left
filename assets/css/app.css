@@ -12,9 +12,10 @@ html {
 }
 .app__counter {
   font-size: 25vw;
-  margin: -5vh 0 0;
+  line-height: 100vh;
+  margin:0;
   background: url(../img/saffu-UEgo43quyCw-unsplash.jpg) center center no-repeat;
-  background-size: 200% 120%;
+  background-size: 100% 100%;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   -webkit-background-clip: text;

@@ -8,7 +8,7 @@ function getDays() {
   const now = new Date();
   const today = [now.getFullYear(), now.getMonth() + 1, now.getDate()];
   const startDate = moment(today);
-  const endDate = moment([2019, 10, 2]);
+  const endDate = moment([2019, 9, 30]);
   const days = endDate.diff(startDate, 'days');
   return days;
 }
