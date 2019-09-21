@@ -11,6 +11,8 @@ html {
   background: white;
 }
 .app__counter {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   font-size: 25vw;
   margin:0;
   background: url(../img/thomas-vimare-IZ01rjX0XQA-unsplash.jpg) center center no-repeat;
