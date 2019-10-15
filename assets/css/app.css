@@ -14,24 +14,27 @@ html {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   font-size: 25vw;
+  line-height: 25vw;
   margin:0;
-  background: url(../img/thomas-vimare-IZ01rjX0XQA-unsplash.jpg) center center no-repeat;
-  background-size: 100% 100%;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: white;
+  color: #ff3900;
   font-weight: bold;
+  position: relative;
+}
+.app__counter::before {
+  content: '{';
+  display: inline-block;
+  transform: translate(0,-10%);
 }
 @media all and (min-width: 768px) {
   .app__counter {
     font-size: 25vw;
+    line-height: 25vw;
   }
 }
 @media all and (min-height: 500px) {
   .app__counter {
     font-size: 40vw;
+    line-height: 40vw;
   }
 }
 .app__credits {
