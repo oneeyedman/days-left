@@ -6,9 +6,10 @@ let rDays = getDays();
 
 function getDays() {
   const now = new Date();
-  const today = [now.getFullYear(), now.getMonth() + 1, now.getDate()];
+  const today = [now.getFullYear(), now.getMonth(), now.getDate()];
   const startDate = moment(today);
-  const endDate = moment([2019, 11, 4]);
+  const endDate = moment([2019, 11, 19]);
+  console.log(startDate, endDate);
   const days = endDate.diff(startDate, 'days');
   return days;
 }
