@@ -44,6 +44,11 @@ html {
   color: #b0b0b0;
 }
 
+
+
+
+
+/* PARADIGMA */
 .app--paradigma {
   color: #ff3900;
 }
@@ -53,6 +58,11 @@ html {
   transform: translate(0,-10%);
 }
 
+
+
+
+
+/* STAR WARS */
 .app--starwars {
   background: #010101;
   color: #fed003;
@@ -76,4 +86,67 @@ html {
     width: 75px;
     height: 75px;
   }
+}
+
+
+
+
+
+/* 47 YEARS */
+.app--47 {
+  background: linear-gradient(to bottom, #0091FF 50%, #05f);
+}
+.app--47 .app__counter {
+  font-size: 25vw;
+  margin: -5vh 0 0;
+  background: repeating-linear-gradient(
+  20deg,
+  #E02020 .02em,
+  #E02020 .15em,
+  #f4f5f6 .15em,
+  #f4f5f6 .30em
+) center center;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: white;
+  position: relative;
+}
+
+.app--47 .app__counter::before {
+  content: '';
+  width: .2em;
+  height: .2em;
+  background: url(../img/flame.svg) center center no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  left: 50%;
+  top: 0;
+  display: block;
+  transform: translate(-50%, .1em);
+}
+.app--47 .app__counter::after {
+  content: '';
+  width: .001em;
+  height: .001em;
+  background: transparent;
+  border-radius: 50%;
+  background-size: auto 100%;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  display: block;
+  transform: translate(-50%, -.14em) scale(4, .15);
+  z-index: -1;
+  box-shadow: 0 0 .1em .07em rgba(0,0,0, .6), 0 0 .05em .04em rgba(0,0,0, .6);
+}
+
+.app--47.app--day-1 .app__counter::before,
+.app--47.app--day-1 .app__counter::after {
+  left: 58%;
+}
+.app--47.app--day-4 .app__counter::before,
+.app--47.app--day-4 .app__counter::after {
+  left: 66%;
 }
