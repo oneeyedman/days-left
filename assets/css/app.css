@@ -99,10 +99,9 @@ html {
 .app--47 .app__counter {
   font-size: 25vw;
   margin: -5vh 0 0;
-
   color: white;
+  text-shadow: 0 0 5px rgba(255,255,255,.3);
 }
-
 .app--47 .app__counter::before {
   content: '';
   width: .2em;
@@ -113,7 +112,7 @@ html {
   left: 50%;
   top: 0;
   display: block;
-  transform: translate(-50%, .1em);
+  transform: translate(-50%, .07em);
 }
 .app--47 .app__counter::after {
   content: '';
@@ -138,4 +137,13 @@ html {
 .app--47.app--day-4 .app__counter::before,
 .app--47.app--day-4 .app__counter::after {
   left: 66%;
+}
+
+@media all and (min-width: 768px) {
+  .app--47 .app__counter {
+    font-size: 25vw;
+    margin: -5vh 0 0;
+    color: white;
+    text-shadow: 0 0 20px rgba(255,255,255,.4);
+  }
 }
