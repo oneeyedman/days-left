@@ -94,24 +94,13 @@ html {
 
 /* 47 YEARS */
 .app--47 {
-  background: linear-gradient(to bottom, #0091FF 10%, #05f);
+  background: linear-gradient(to top, #09F, #04f);
 }
 .app--47 .app__counter {
   font-size: 25vw;
   margin: -5vh 0 0;
-  background: linear-gradient(to right, rgba(255,255,255, .5), rgba(255,255,255, 0) 30%), repeating-linear-gradient(
-  20deg,
-  #E02020 .02em,
-  #E02020 .15em,
-  #f4f5f6 .15em,
-  #f4f5f6 .30em
-) center center;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+
   color: white;
-  position: relative; 
 }
 
 .app--47 .app__counter::before {
