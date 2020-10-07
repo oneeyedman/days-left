@@ -1,6 +1,7 @@
 'use strict';
-const test = document.querySelector('.js__test');
-const counter = document.querySelector('.js__counter');
+
+const app = document.querySelector('.app');
+const counter = app.querySelector('.js__counter');
 const reloadInMS = 300000;
 let rDays = getDays();
 
@@ -8,8 +9,7 @@ function getDays() {
   const now = new Date();
   const today = [now.getFullYear(), now.getMonth(), now.getDate()];
   const startDate = moment(today);
-  const endDate = moment([2019, 11, 19]);
-  console.log(startDate, endDate);
+  const endDate = moment([2020, 9, 13]);
   const days = endDate.diff(startDate, 'days');
   return days;
 }
@@ -20,6 +20,7 @@ function writeRemainingDays(days) {
     result = days;
   }
   counter.innerHTML = result;
+  app.classList.add('app--day-' + result);
 }
 
 writeRemainingDays(rDays);
@@ -27,4 +28,5 @@ writeRemainingDays(rDays);
 const checkDays = setInterval(function(){
   rDays = getDays();
   writeRemainingDays(rDays);
+
 }, reloadInMS);
