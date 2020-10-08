@@ -19,7 +19,6 @@ html {
   color: inherit;
   font-weight: bold;
   position: relative;
-  position: relative;
 }
 @media all and (min-height: 500px) {
   .app__counter {
@@ -99,17 +98,22 @@ html {
 .app--47 .app__counter {
   font-size: 25vw;
   margin: -5vh 0 0;
-  background: repeating-linear-gradient(
-  20deg,
-  #E02020 .02em,
-  #E02020 .15em,
-  #f4f5f6 .15em,
-  #f4f5f6 .30em
-) center center;
+  background: 
+    linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0)),
+    repeating-linear-gradient(
+      20deg,
+      #E02020 .02em,
+      #E02020 .15em,
+      #f4f5f6 .15em,
+      #f4f5f6 .30em
+    );
+  -webkit-appearance: none;
+  appearance: none;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+
   color: white;
   position: relative;
 }
@@ -130,16 +134,16 @@ html {
   content: '';
   width: .001em;
   height: .001em;
-  background: transparent;
+  background-color: rgba(0,0,0,.01);
   border-radius: 50%;
   background-size: auto 100%;
   position: relative;
   left: 50%;
   bottom: 0;
   display: block;
-  transform: translate(-50%, -.14em) scale(4, .15);
+  transform: translate(-50%, -.13em) scale(4, .15);
   z-index: -1;
-  box-shadow: 0 0 .1em .07em rgba(0,0,0, .6), 0 0 .05em .04em rgba(0,0,0, .6);
+  box-shadow: 0 0 .1em .07em rgba(0,0,0, 1), 0 0 .05em .04em rgba(0,0,0, .6);
 }
 
 .app--47.app--day-1 .app__counter::before,
