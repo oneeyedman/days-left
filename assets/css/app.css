@@ -3,7 +3,7 @@ html {
 }
 .app {
   height: 100%;
-  font-family: 'Helvetica', arial, sans-serif;
+  font-family: arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,14 +11,11 @@ html {
   background: white;
 }
 .app__counter {
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
   font-size: 25vw;
   line-height: 100%;
   margin:0;
   color: inherit;
   font-weight: bold;
-  position: relative;
   position: relative;
 }
 @media all and (min-height: 500px) {
@@ -95,13 +92,35 @@ html {
 /* 47 YEARS */
 .app--47 {
   background: linear-gradient(to top, #09F, #04f);
+  overflow: hidden;
 }
 .app--47 .app__counter {
   font-size: 25vw;
-  margin: -5vh 0 0;
-  color: white;
-  text-shadow: 0 0 5px rgba(255,255,255,.3);
+  height: 25vw;
+  margin: 0;
+  position: relative;
 }
+.app--47 .app__counter-label {
+  background: 
+    linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0)),
+    repeating-linear-gradient(
+      20deg,
+      #E02020 .02em,
+      #E02020 .15em,
+      #f4f5f6 .15em,
+      #f4f5f6 .30em
+    );
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
 .app--47 .app__counter::before {
   content: '';
   width: .2em;
@@ -112,22 +131,24 @@ html {
   left: 50%;
   top: 0;
   display: block;
-  transform: translate(-50%, .07em);
+  transform: translate(-50%, .1em);
 }
 .app--47 .app__counter::after {
   content: '';
-  width: .001em;
-  height: .001em;
-  background: transparent;
-  border-radius: 50%;
-  background-size: auto 100%;
+  width: .5em;
+  height: .5em;
+  
+  background: url(../img/shadow.png) left top no-repeat;
+  background-size: 100%;
   position: relative;
   left: 50%;
   bottom: 0;
   display: block;
-  transform: translate(-50%, -.14em) scale(4, .15);
-  z-index: -1;
-  box-shadow: 0 0 .1em .07em rgba(0,0,0, .6), 0 0 .05em .04em rgba(0,0,0, .6);
+  transform: translate(-50%, -.39em) scale(1.4, .2);
+  mix-blend-mode: multiply;
+  opacity: .3;
+  filter: blur(10px);
+  z-index: 1;
 }
 
 .app--47.app--day-1 .app__counter::before,
@@ -137,13 +158,4 @@ html {
 .app--47.app--day-4 .app__counter::before,
 .app--47.app--day-4 .app__counter::after {
   left: 66%;
-}
-
-@media all and (min-width: 768px) {
-  .app--47 .app__counter {
-    font-size: 25vw;
-    margin: -5vh 0 0;
-    color: white;
-    text-shadow: 0 0 20px rgba(255,255,255,.4);
-  }
 }
