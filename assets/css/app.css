@@ -91,7 +91,8 @@ html {
 
 /* 47 YEARS */
 .app--47 {
-  background: linear-gradient(to bottom, #0091FF 50%, #05f);
+  background: linear-gradient(to top, #09F, #04f);
+  overflow: hidden;
 }
 .app--47 .app__counter {
   font-size: 25vw;
