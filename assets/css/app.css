@@ -95,9 +95,8 @@ html {
   overflow: hidden;
 }
 .app--47 .app__counter {
-  font-size: 25vw;
-  height: 25vw;
-  margin: 0;
+  font-size: 20vw;
+  margin: 10vh 0 0;
   position: relative;
 }
 .app--47 .app__counter-label {
@@ -158,4 +157,20 @@ html {
 .app--47.app--day-4 .app__counter::before,
 .app--47.app--day-4 .app__counter::after {
   left: 69%;
+}
+@media all and (min-height: 500px) {
+  .app--47 .app__counter {
+    font-size: 50vw;
+  }
+}
+@media all and (min-width: 768px) and (min-height: 500px) {
+  .app--47 .app__counter {
+    font-size: 50vw;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-height: 500px) {
+  .app--47 .app__counter {
+    font-size: 25vw;
+  }
 }
